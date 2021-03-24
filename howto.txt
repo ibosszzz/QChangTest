@@ -1,0 +1,10 @@
+run service
+-go to dir code/QChangTest
+-use command "go run main.go" (listen in port 8900)
+
+run test
+-use command "go test -v .\controller\"
+
+api document
+-import file postman collection to postman app
+-test call api after run service

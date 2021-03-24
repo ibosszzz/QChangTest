@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "b3d3c2da-b22b-484d-967e-92e66bda436c",
+		"name": "QChangTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findValue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8900/findValue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8900",
+					"path": [
+						"findValue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkCashierDesk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8900/checkCashierDesk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8900",
+					"path": [
+						"checkCashierDesk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cashier",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_price\": 1250,\r\n    \"customer_pay\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8900/cashier",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8900",
+					"path": [
+						"cashier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"1000\": 10,\r\n    \"500\": 20,\r\n    \"100\": 15,\r\n    \"50\": 20,\r\n    \"20\": 30,\r\n    \"10\": 20,\r\n    \"5\": 20,\r\n    \"1\": 20,\r\n    \"0.25\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8900/addCash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8900",
+					"path": [
+						"addCash"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
